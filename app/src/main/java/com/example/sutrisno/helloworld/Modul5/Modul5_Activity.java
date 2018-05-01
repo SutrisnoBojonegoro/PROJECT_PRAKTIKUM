@@ -20,27 +20,28 @@ public class Modul5_Activity extends AppCompatActivity {
     }
 
     public void onButtonClick(View view) {
-        //error
-//        Modul5_Fragment_02 fragmentTwo = (Modul5_Fragment_02) getFragmentManager().findFragmentById(R.id.fragment_two);
-//
-//        switch (view.getId()){
-//
-//            case R.id.btn_one_create_new :
-//                if(fragmentTwo == null) {
-//                    //PHONE !  // Need to launch another activity
-//                    Intent intent = new Intent(this , Modul5_Activity_drawing.class);
-//                    startActivity(intent);
-//
-//                }else{
-//                    // TABLET! // Do nothing right now, and just show up a toast.
-//                    Toast.makeText(this, "Will be implemented later", Toast.LENGTH_SHORT).show();
-//                }
-//                break;
-//
-//            case R.id.btn_one_open_existing :
-//                Toast.makeText(this, "Will be implemented later", Toast.LENGTH_SHORT ).show();
-//                break;
-//            default:
-//        }
+
+        Modul5_Fragment_02 fragmentTwo = (Modul5_Fragment_02)
+                getFragmentManager().findFragmentById(R.id.fragment_two);
+
+        switch (view.getId()){
+
+            case R.id.btn_one_create_new :
+                if(fragmentTwo == null) {
+                    //PHONE !  // Need to launch another activity
+                    Intent intent = new Intent(this , Modul5_Activity_drawing.class);
+                    startActivity(intent);
+
+                }else{
+                    // TABLET! // Do nothing right now, and just show up a toast.
+                    Toast.makeText(this, "Will be implemented later", Toast.LENGTH_SHORT).show();
+                }
+                break;
+
+            case R.id.btn_one_open_existing :
+                Toast.makeText(this, "Will be implemented later", Toast.LENGTH_SHORT ).show();
+                break;
+            default:
+        }
     }
 }

@@ -31,5 +31,4 @@
         android:layout_marginRight="@dimen/btn_margin_horizontal"
         />
 
-
 </RelativeLayout>
