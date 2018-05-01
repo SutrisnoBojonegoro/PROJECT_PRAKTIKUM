@@ -20,6 +20,7 @@ public class Modul5_Activity extends AppCompatActivity {
     }
 
     public void onButtonClick(View view) {
+        //error
 //        Modul5_Fragment_02 fragmentTwo = (Modul5_Fragment_02) getFragmentManager().findFragmentById(R.id.fragment_two);
 //
 //        switch (view.getId()){
