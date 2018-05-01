@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorOrange"
+    tools:context="com.example.sutrisno.helloworld.Modul1.Modul1_Activity">
+
+    <TextView
+        android:id="@+id/textNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silahkan Anda klik button dibawah ini !(untuk melihat biodata saya)"
+        android:textColor="@color/colorGreen"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="350dp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/btn_pdmodul1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorGreen"
+        android:textColor="@color/colorWhite"
+        android:text="Klik disini" />
+</RelativeLayout>

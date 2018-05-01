@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sutrisno.helloworld">
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- <uses-sdk -->
+    <!-- android:minSdkVersion="8" -->
+    <!-- android:targetSdkVersion="23" /> -->
+    <!-- <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> -->
+    <!-- <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Modul2.Modul2_Activity" />
+        <activity android:name=".Modul3.Modul3_Activity" />
+        <activity android:name=".Modul3.Modul3_isiActivity" />
+        <activity android:name=".Modul5.Modul5_Activity" />
+        <activity android:name=".Modul5.Modul5_Activity_drawing" />
+        <activity android:name=".Modul2.Modul2_isiActivity" />
+        <activity android:name=".Modul1.Modul1_Activity" />
+        <activity android:name=".Modul1.Modul1_isiActivity" />
+        <activity android:name=".Modul4.Modul4_Activity"></activity>
+    </application>
+
+</manifest>
