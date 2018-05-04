@@ -6,7 +6,6 @@ import android.os.Bundle;
 import com.example.sutrisno.helloworld.R;
 
 public class Modul5_Activity_drawing extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

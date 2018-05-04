@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorOrange"
-    tools:context="com.example.sutrisno.helloworld.Modul5.Modul5_Fragment_01">
+    >
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -29,6 +29,7 @@
         android:layout_marginBottom="@dimen/btn_margin_vertical"
         android:layout_marginLeft="@dimen/btn_margin_horizontal"
         android:layout_marginRight="@dimen/btn_margin_horizontal"
+        android:onClick="onButtonClick"
         />
 
 </RelativeLayout>

@@ -1,4 +1,4 @@
-package com.example.sutrisno.helloworld.Modul5;
+package com.example.sutrisno.helloworld.Modul6;
 
 
 import android.os.Bundle;
@@ -12,13 +12,19 @@ import com.example.sutrisno.helloworld.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class Modul5_Fragment_02 extends Fragment {
+public class UsernameFragment extends Fragment {
+
+
+    public UsernameFragment() {
+        // Required empty public constructor
+    }
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_02, container, false);
+        return inflater.inflate(R.layout.fragment_modul6_username, container, false);
     }
 
 }

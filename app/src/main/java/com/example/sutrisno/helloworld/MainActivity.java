@@ -11,6 +11,7 @@ import com.example.sutrisno.helloworld.Modul2.Modul2_Activity;
 import com.example.sutrisno.helloworld.Modul3.Modul3_Activity;
 import com.example.sutrisno.helloworld.Modul4.Modul4_Activity;
 import com.example.sutrisno.helloworld.Modul5.Modul5_Activity;
+import com.example.sutrisno.helloworld.Modul6.Modul6_MainActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -79,6 +80,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //Method utk klik tombol modul 6
+//        buttonModul6.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                //perintah setelah kejadian klik
+//                Intent intent = new Intent(MainActivity.this, Modul6_MainActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
 
     }

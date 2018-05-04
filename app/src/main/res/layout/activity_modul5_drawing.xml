@@ -12,12 +12,12 @@
     android:layout_marginRight="@dimen/activity_horizontal_margin"
     android:layout_marginTop="@dimen/activity_vertical_margin"
     android:baselineAligned="false"
-    android:background="@color/colorOrange"
-    tools:context="com.example.sutrisno.helloworld.Modul5.Modul5_Activity_drawing">
+    android:background="@color/colorOrange">
 
     <!-- Fragment Two only -->
     <fragment
         android:id="@+id/fragment_two"
+        android:name="com.example.sutrisno.helloworld.Modul5.Modul5_Fragment_02"
         android:layout_height="match_parent"
         android:layout_width="0dp"
         android:layout_weight="1"/>

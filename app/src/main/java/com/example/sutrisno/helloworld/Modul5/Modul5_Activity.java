@@ -19,17 +19,19 @@ public class Modul5_Activity extends AppCompatActivity {
         setContentView(R.layout.activity_modul5_);
     }
 
-    public void onButtonClick(View view) {
 
-        Modul5_Fragment_02 fragmentTwo = (Modul5_Fragment_02)
-                getFragmentManager().findFragmentById(R.id.fragment_two);
+    public void onButtonClick(View v) {
+        Modul5_Fragment_02 fragmentTwo =(Modul5_Fragment_02)
+                getSupportFragmentManager().findFragmentById(R.id.fragment_two);
 
-        switch (view.getId()){
+
+        switch (v.getId()){
 
             case R.id.btn_one_create_new :
                 if(fragmentTwo == null) {
                     //PHONE !  // Need to launch another activity
-                    Intent intent = new Intent(this , Modul5_Activity_drawing.class);
+                    Intent intent = new Intent(Modul5_Activity.this ,
+                            Modul5_Activity_drawing.class);
                     startActivity(intent);
 
                 }else{
