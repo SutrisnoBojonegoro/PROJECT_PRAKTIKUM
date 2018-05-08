@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_name"
+    android:layout_width="190dp"
+    android:layout_height="80dp"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorBlue"
+
+    >
+
+    <TextView
+        android:id="@+id/lbl_your_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Username"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="23dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorWhite"
+        />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorWhite"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+        android:inputType="text" />
+
+</LinearLayout>
