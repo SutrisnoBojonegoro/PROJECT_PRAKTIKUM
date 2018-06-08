@@ -3,58 +3,38 @@ package com.example.sutrisno.helloworld.Modul6;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.FragmentManager;
+import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.example.sutrisno.helloworld.R;
-
 /**
- * A simple {@link Fragment} subclass.
+ * A simple {@link android.app.Fragment} subclass.
  */
 public class MyAlertDialogFragment extends DialogFragment {
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
+        return new AlertDialog.Builder(getActivity())
+                // set dialog icon
+                .setIcon(android.R.drawable.stat_notify_error)
+                // set Dialog Title
+                .setTitle("CONTOH ALERT DIALOG FRAGMENT")
+                // Set Dialog Message
+                .setMessage("Ini adalah contoh isi dari pesan atau peringatan yang muncul " +
+                        "dari alert dialog pragment ...")
 
-        return new AlertDialog.Builder(getActivity()).setIcon(android.R.drawable.stat_notify_error).
-                // positif button
-                setTitle("Alert dialog fragment example").setMessage("This is a message").
-                setPositiveButton("OK", new DialogInterface.OnClickListener() {
-                    @Override
+                // positive button
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-
-                        Toast.makeText(getActivity(),"Pressed OK", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "Anda pilih, OK", Toast.LENGTH_SHORT).show();
                     }
-
-                }).
+                })
                 // negative button
-                setNegativeButton("Cencel", new DialogInterface.OnClickListener() {
-                    @Override
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(getActivity(),"Cancel" , Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "Anda pilih, Cancel", Toast.LENGTH_SHORT).show();
                     }
                 }).create();
-    }
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_modul6_myalertdialog, container, false);
-    }
-
-    public void show(FragmentManager manager, String fragment_edit_name) {
-
-    }
-
-    public interface UserNameListener {
-
     }
 }

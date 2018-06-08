@@ -32,7 +32,9 @@
         <activity android:name=".Modul1.Modul1_Activity" />
         <activity android:name=".Modul1.Modul1_isiActivity" />
         <activity android:name=".Modul4.Modul4_Activity" />
-        <activity android:name=".Modul6.Modul6_MainActivity"></activity>
+        <activity android:name=".Modul6.Modul6_MainActivity" />
+        <activity android:name=".Acc.AccKalkulator_Activity" />
+        <activity android:name=".Modul8.DataHelper"></activity>
     </application>
 
 </manifest>

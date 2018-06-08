@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/colorOrange">
+    android:background="@color/colorAccent"
+    >
 
-    <!--<Button-->
-        <!--android:id="@+id/showCustomFragment"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Show Custom"-->
-        <!--android:textColor="@color/colorWhite"-->
-        <!--android:background="@color/colorGreen"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_marginTop="@dimen/btn_margin_vertical"-->
-        <!--android:layout_marginBottom="@dimen/btn_margin_vertical"-->
-        <!--android:layout_marginLeft="@dimen/btn_margin_horizontal"-->
-        <!--android:layout_marginRight="@dimen/btn_margin_horizontal"-->
-        <!--android:onClick="onButtonClick"-->
-        <!--/>-->
 
-    <!--<Button-->
-        <!--android:id="@+id/showAlertDialogFragment"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Show Alert"-->
-        <!--android:textColor="@color/colorWhite"-->
-        <!--android:background="@color/colorGreen"-->
-        <!--android:layout_marginBottom="@dimen/btn_margin_vertical"-->
-        <!--android:layout_marginLeft="@dimen/btn_margin_horizontal"-->
-        <!--android:layout_marginRight="@dimen/btn_margin_horizontal"-->
-        <!--android:onClick="onButtonClick"-->
-        <!--/>-->
+    <Button
+        android:id="@+id/showCustomFragment"
+        android:text="show Custom Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:background="@color/colorGreen"
+        android:textColor="@color/colorWhite"
+        />
 
-</LinearLayout>
+    <Button
+        android:id="@+id/showAlertDialogFragment"
+        android:text="show Alert Dialog Fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGreen"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@+id/showCustomFragment"
+        android:layout_alignRight="@+id/showCustomFragment"
+        android:layout_alignEnd="@+id/showCustomFragment"
+        android:layout_alignLeft="@+id/showCustomFragment"
+        android:layout_alignStart="@+id/showCustomFragment" />
+
+</RelativeLayout>
